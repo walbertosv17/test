@@ -13,11 +13,9 @@ jobs:
   any_name:
     runs-on: ubuntu-latest
     steps:
-      # - name: Any Name Bash Test Step
-      #   shell: bash
-      #   run: ./scripts/print.sh
-      #   env:
-      #     GH_REPO: ${{ github.repository }}
-      #     GH_REPO_O: ${{ github.repository_owner }}
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+
       - name: List directory contents
          run: ls -la
