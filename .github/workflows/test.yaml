@@ -13,10 +13,10 @@ jobs:
   any_name:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout code
+      - name: 📦 Checkout code
         uses: actions/checkout@v2
 
-      - name: Any Name Bash Test Step
+      - name: 📦 Any Name Bash Test Step 📦
         shell: bash
         run: .github/workflows/scripts/print.sh
         env:
