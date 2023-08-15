@@ -14,9 +14,7 @@ jobs:
     steps:
       - name: Any Name Bash Test Step
         shell: bash
-        run: |
-          echo "GH_REPO: $GH_REPO"
-          echo "GH_REPO_O: $GH_REPO_O"
+        run: ./scripts/print.sh
         env:
           GH_REPO: ${{ github.repository }}
           GH_REPO_O: ${{ github.repository_owner }}
