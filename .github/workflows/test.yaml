@@ -16,6 +16,13 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
 
+      - name: Any Name Bash Test Step
+        shell: bash
+        run: .github/workflows/scripts/print.sh
+        env:
+          GH_REPO: ${{ github.repository }}
+          GH_REPO_O: ${{ github.repository_owner }}
+
 
       - name: List directory contents
         run: ls -la
